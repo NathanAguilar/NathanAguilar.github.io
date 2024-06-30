@@ -107,6 +107,22 @@ header {
         }
     }
 
+    /* Styles for the resume link */
+a[href$="my-resume.pdf"] {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--base);
+    background-color: var(--blue-100);
+    border: 1px solid var(--blue);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a[href$=".pdf"]:hover {
+    background-color: var(--blue);
+    color: var(--base-100);
+}
+
     @media (max-width: 1024px) {
         flex-direction: column;
         align-items: center;
